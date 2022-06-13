@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyboards>
+    <Keyboard
+        defaultDictionaryLocale="sv"
+        description="Created with jtlallo"
+        id="8dd7b7fa-91c7-4be1-9b9c-cdfee1b34a47"
+        index="1"
+        layoutResId="@xml/swedish_qwerty"
+        nameResId="@string/swedish_keyboard" />
+    <Keyboard
+        defaultDictionaryLocale="sv"
+        description="Created by Henrik Andersson"
+        id="595f7064-e9d8-40cc-9348-78ea065aff53"
+        index="2"
+        layoutResId="@xml/svorak"
+        nameResId="@string/svorak_keyboard" />
+</Keyboards>
