@@ -2,40 +2,45 @@
 
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ask="http://schemas.android.com/apk/res-auto"
+    ask:showPreview="false"
     android:keyHeight="@integer/key_normal_height"
-    android:keyWidth="20%p"
-    ask:showPreview="false">
+    android:keyWidth="10%p">
+
     <Row>
-        <Key android:codes="40" android:keyWidth="10%p" android:popupCharacters="{[" android:keyEdgeFlags="left"/>
-        <Key android:codes="41" android:keyWidth="10%p" android:popupCharacters="}]"/>
-        <Key android:codes="49"/>
-        <Key android:codes="50"/>
-        <Key android:codes="51"/>
-        <Key android:codes="@integer/key_code_space" android:keyEdgeFlags="right"/>
-    </Row>
-    <Row>
-        <Key android:codes="43" android:keyWidth="10%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="45" android:keyWidth="10%p"/>
-        <Key android:codes="52"/>
-        <Key android:codes="53"/>
-        <Key android:codes="54" android:keyEdgeFlags="right"/>
+        <Key android:codes="∪" android:popupCharacters="∩" android:keyEdgeFlags="left"/>
+        <Key android:codes="∅"/>
+        <Key android:codes="⊆" android:keyLabel="⊆" android:popupCharacters="⊂⊄⊇⊃⊅"/>
+        <Key android:codes="∈" android:keyLabel="∈" android:popupCharacters="∉"/>
+        <Key android:codes="(" android:popupCharacters="{[⟨"/>
+        <Key android:codes=")" android:popupCharacters="}]⟩"/>
+        <Key android:codes="|" android:popupCharacters="‖"/>
+        <Key android:codes="∑" android:popupCharacters="∏"/>
+        <Key android:codes="d" android:popupCharacters="∂"/>
+        <Key android:codes="∫" android:popupCharacters="∮"/>
     </Row>
 
     <Row>
-        <Key android:codes="47" android:keyWidth="10%p" android:popupCharacters="\\" android:keyEdgeFlags="left"/>
-        <Key android:codes="37" android:keyWidth="10%p"/>
-        <Key android:codes="55"/>
-        <Key android:codes="56"/>
-        <Key android:codes="57"/>
-        <Key android:codes="@integer/key_code_delete" android:keyEdgeFlags="right" android:isRepeatable="true"/>
+        <Key android:codes="+" android:popupCharacters="±⊕"/>
+        <Key android:codes="-" android:popupCharacters="∓"/>
+        <Key android:codes="⋅" android:popupCharacters="∘×"/>
+        <Key android:codes="∴" android:popupCharacters="∵"/>
+        <Key android:codes="⇒" android:popupCharacters="⇔"/>
+        <Key android:codes="∃" android:popupCharacters="∀∄"/>
+        <Key android:codes="≡" android:popupCharacters="≅"/>
+        <Key android:codes="=" android:popupCharacters="≠≈" android:keyEdgeFlags="left"/>
+        <Key android:codes="60" android:popupCharacters="&#8804;"/>
+        <Key android:codes="62" android:popupCharacters="&#8805;" android:keyEdgeFlags="right"/>
     </Row>
 
-    <Row android:rowEdgeFlags="bottom">
-        <Key  android:codes="@integer/key_code_mode_symbols" android:keyWidth="10%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="44" android:keyWidth="10%p" />
-        <Key android:codes="42" android:keyLabel="*"/>
+    <Row>
+        <Key android:codes="π" android:popupCharacters="εφ∆" android:keyEdgeFlags="left"/>
+        <Key android:codes="e" android:popupCharacters="ijk"/>
+        <Key android:codes="ℤ" android:popupCharacters="ℂ𝔼𝔽ℍ𝕀ℚℝ"/>
+        <Key android:codes="ⁿ" android:popupCharacters="ᵀⁿ⁰¹²³⁴"/>
+        <Key android:codes="∞"/>
         <Key android:codes="48"/>
-        <Key android:codes="46"/>
-        <Key android:codes="@integer/key_code_enter" android:keyEdgeFlags="right" ask:longPressCode="@integer/key_code_settings"/>
+        <Key android:codes="∧" android:popupCharacters="∨⊻¬"/>
+        <Key android:codes="@integer/key_code_forward_delete" android:isRepeatable="true"/>
+        <Key android:codes="@integer/key_code_delete" android:keyEdgeFlags="right" android:isRepeatable="true"/>
     </Row>
 </Keyboard>

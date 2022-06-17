@@ -24,7 +24,6 @@ import static com.anysoftkeyboard.keyboards.Keyboard.KEYBOARD_ROW_MODE_URL;
 import android.content.Context;
 import android.content.res.Resources;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.inputmethod.EditorInfo;
 import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;
@@ -84,7 +83,7 @@ public class KeyboardSwitcher {
     private static final int SYMBOLS_KEYBOARD_REGULAR_INDEX = 0;
     private static final int SYMBOLS_KEYBOARD_ALT_INDEX = 1;
     private static final int SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX = 2;
-    private static final int SYMBOLS_KEYBOARD_LAST_CYCLE_INDEX = SYMBOLS_KEYBOARD_ALT_INDEX;
+    private static final int SYMBOLS_KEYBOARD_LAST_CYCLE_INDEX = SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX;
     private static final int SYMBOLS_KEYBOARD_NUMBERS_INDEX = 3;
     private static final int SYMBOLS_KEYBOARD_PHONE_INDEX = 4;
     private static final int SYMBOLS_KEYBOARD_DATETIME_INDEX = 5;
