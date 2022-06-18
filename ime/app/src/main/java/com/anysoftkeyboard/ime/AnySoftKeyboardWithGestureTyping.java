@@ -361,9 +361,16 @@ public abstract class AnySoftKeyboardWithGestureTyping extends AnySoftKeyboardWi
             int[] nearByKeyCodes,
             boolean fromUI) {
         if (mGestureTypingEnabled
-                && mJustPerformedGesture
-                && primaryCode > 0 /*printable character*/) {
-            confirmLastGesture(primaryCode != KeyCodes.SPACE && mPrefsAutoSpace);
+                && mJustPerformedGesture) {
+            if (primaryCode > 0) {
+                /*printable character*/
+                confirmLastGesture(primaryCode != KeyCodes.SPACE && mPrefsAutoSpace);
+            } else if (primaryCode == KeyCodes.DELETE) {
+                final InputConnection ic = getCurrentInputConnection();
+                if (ic != null) {
+                    handleBackWord(ic);
+                }
+            }
         }
         mJustPerformedGesture = false;
 
